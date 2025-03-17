@@ -3,9 +3,6 @@ CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
-build.ninja
-.ninja_*
-CMakeLists.txt.user
 *.exe
 *.out
 *.o
@@ -14,8 +11,11 @@ CMakeLists.txt.user
 *.lib
 *.so
 *.dll
-*.log
-*.tmp
-*.swp
-*.bak
+*.ninja
+.ninja_deps
+.ninja_log
+*
+!CMakeLists.txt
+!*.cpp
+!*.h
 !tastatura.txt

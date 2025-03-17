@@ -1,29 +1,16 @@
-// main.cpp
+
 #include "Simulation.h"
 #include <iostream>
 #include <fstream>
 
 
-void createInputExampleFile() {
-    std::ofstream file("input.txt");
-    if (file.is_open()) {
 
-        file << "Particle1 1.0 5.0 50.0 50.0 10.0 5.0\n";
-        file << "Particle2 2.0 8.0 150.0 100.0 -8.0 3.0\n";
-        file << "Particle3 1.5 6.0 100.0 150.0 2.0 -12.0\n";
-        file.close();
-        std::cout << "The input.txt file has been created with example input data.\n";
-    } else {
-        std::cout << "Could not create the input.txt file.\n";
-    }
-}
 
 int main() {
 
-    createInputExampleFile();
 
 
-    Simulation sim(200.0, 200.0, 0.1);
+    Simulation sim(200.0, 200.0, 1.0);
 
 
     int option;
